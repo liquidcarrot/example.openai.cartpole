@@ -1,0 +1,15 @@
+{
+  "name": "example.openai",
+  "version": "1.0.0",
+  "description": "OpenAI Gym is a training and testing environment for Reinforcement Learning Algorithms.",
+  "main": "index.js",
+  "scripts": {
+    "start": "./node_modules/.bin/nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "contributors": [
+    "Luis Carbonell <luis@liquidcarrot.io>",
+    "Christian Echevarria <christian.george.echevarria@gmail.com>"
+  ],
+  "private": true
+}
