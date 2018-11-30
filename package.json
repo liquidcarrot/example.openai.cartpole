@@ -4,12 +4,20 @@
   "description": "OpenAI Gym is a training and testing environment for Reinforcement Learning Algorithms.",
   "main": "index.js",
   "scripts": {
-    "start": "./node_modules/.bin/nodemon index.js",
+    "start": "node index.js",
+    "start:dev": "./node_modules/.bin/nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "contributors": [
     "Luis Carbonell <luis@liquidcarrot.io>",
     "Christian Echevarria <christian.george.echevarria@gmail.com>"
   ],
-  "private": true
+  "private": true,
+  "dependencies": {
+    "dotenv": "^6.1.0",
+    "liquid-carrot": "^1.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.7"
+  }
 }

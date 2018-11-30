@@ -5,9 +5,10 @@
 * a pole using OpenAI's CartPole-v0 gym.
 */
 
+let dotenv = require("dotenv").config()
 let async = require('async')
 let request = require('request')
-let carrot = require('liquid-carrot')("API_KEY")
+let carrot = require('liquid-carrot')(process.env.API_KEY || "API_KEY", process.env.HOST || null)
 
 async.auto({
   // Create OpenAI Environment
